@@ -1,0 +1,148 @@
+body {
+  background-color: rgb(230, 222, 222) !important;
+}
+
+.container {
+  background-color: rgb(230, 222, 222) !important;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz_card {
+  width: 30rem;
+}
+
+.question_footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+}
+
+.quiz_answer_card:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.bg-success,
+.bg-danger {
+  color: white !important;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.siderbar {
+  color: white;
+  background-color: blue;
+  width: 100px;
+  height: 403px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.siderbar img {
+  width: 60px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.siderbar span {
+  font-size: 20px;
+  gap: 5px;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 0 !important;
+}
+
+p:hover {
+  cursor: pointer;
+}
+
+.card {
+  border-top-left-radius: 0% !important;
+  border-bottom-left-radius: 0% !important;
+}
+
+.quiz-card {
+  height: 403px !important;
+}
+
+.heigth_403 {
+  height: 403px !important;
+}
+
+.card-title {
+  height: 48px !important;
+}
+
+.card-body span {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.card-body img {
+  height: 100px;
+}
+
+.contentCenter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.score {
+  margin-top: 20px;
+  text-transform: uppercase;
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.score span:first-child {
+  color: blue;
+}
+
+.backgroundEndScreen {
+  background-color: bisque;
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.endScreenButtons {
+  color: rgb(255, 94, 0);
+  border: none;
+  background-color: bisque;
+  font-size: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.endScreenButtons:hover {
+  cursor: pointer;
+  background-color: rgb(255, 94, 0);
+  color: white;
+  border-radius: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 40px;
+  padding-right: 40px;
+}

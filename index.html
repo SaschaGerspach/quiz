@@ -1,13 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap file -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body onload="init()">
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Navbar</span>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="siderbar text_center">
+        <img src="./img/group8.png" alt="" />
+        <span>
+          <p>HTML</p>
+          <br />
+          <p>CSS</p>
+          <br />
+          <p>JS</p>
+          <br />
+          <p>Java</p>
+          <br />
+        </span>
+      </div>
+      <div class="card quiz_card">
+        <div class="card-body heigth_403" id="endScreen" style="display: none">
+          <div class="backgroundEndScreen contentCenter">
+            <div><img src="./img/group5.png" alt="" /></div>
+            <span class="text_center">complete<br />html quiz</span>
+            <div class="text_center score">
+              <span>Your Score</span><span><b id="amountOfRightQuestions"></b>/<b id="amountOfQuestions"></b></span>
+            </div>
+            <button class="endScreenButtons" onclick="" class="btn btn-primary" disabled>share</button>
+            <button class="endScreenButtons" onclick="restartGame()" class="btn btn-primary">replay</button>
+          </div>
+        </div>
+
+        <div class="card-body" id="questionBody">
+          <h5 class="card-title" id="questionText">Frage</h5>
+
+          <div class="card quiz_answer_card mb-2" onclick="answer('answer_1')">
+            <div class="card-body" id="answer_1">Antwort</div>
+          </div>
+          <div class="card quiz_answer_card mb-2" onclick="answer('answer_2')">
+            <div class="card-body" id="answer_2">Antwort</div>
+          </div>
+          <div class="card quiz_answer_card mb-2" onclick="answer('answer_3')">
+            <div class="card-body" id="answer_3">Antwort</div>
+          </div>
+          <div class="card quiz_answer_card mb-2">
+            <div class="card-body" id="answer_4" onclick="answer('answer_4')">Antwort</div>
+          </div>
+
+          <div class="question_footer">
+            <b id="questionNumber">1</b> von <b id="allQuestions"></b> Fragen
+            <button onclick="nextQuestion()" class="btn btn-primary" id="nextButton" disabled>Nächste Frage</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
